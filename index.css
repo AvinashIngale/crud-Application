@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+}
+
+.mainDiv
+{
+    display: flex;
+}
+
+.container {
+    width: 560px;
+    margin-left: 50px;
+    padding-left: 30px;
+    padding-top: 20px;
+    background-color: #e0efff;
+    border-radius: 8px;
+}
+.container2
+{
+    display: flex;
+    margin-left: 10px;
+    width: 700px;
+    height: 100px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+form label {
+    grid-column: 1 / 3;
+    font-weight: bold;
+}
+
+form input, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.txt
+{
+    height: auto;
+    width: 500px;
+}
+
+form button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+form button[type="reset"] {
+    background-color: #6c757d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    background-color:  #e0efff;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+}
+
+.edit-btn, .delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    opacity: 0.8;
+}

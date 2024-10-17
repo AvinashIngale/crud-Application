@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="CrudApp.css">
+</head>
+<body>
+   <div class="mainDiv">
+    <div class="container">
+        <form id="productForm">
+            <label for="productCode">Product Code</label>
+            <input type="text" class="txt" id="productCode" name="productCode" required>
+
+            <label for="productName">Product Name</label>
+            <input type="text" class="txt" id="productName" name="productName" required>
+
+            <label for="qty">Qty</label>
+            <input type="number" class="txt" id="qty" name="qty" required>
+
+            <label for="price">Price</label>
+            <input type="number" class="txt" id="price" name="price" required>
+            <br>
+            <button type="submit" id="submitButton">Submit</button><br>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+       <div class="container2">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Code</th>
+                    <th>Product Name</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="productTableBody">
+                <!-- Product rows will be added here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    <script src="CrudApp.js"></script>
+</body>
+</html>
